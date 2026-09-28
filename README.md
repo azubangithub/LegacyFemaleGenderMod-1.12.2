@@ -32,6 +32,13 @@ This mod is primarily client-sided, but settings are automatically synced with o
 
 - **G** - Open Customization Settings
 
+## Credits
+
+- **Wildfire (WildfireRomeo)** - Original Creator
+- **celeste** - Maintainer (Upstream)
+- **pupnewfster** - Maintainer (Upstream)
+- **azuban** - 1.12.2 Forge Port
+
 ## License
 
 LFGM is licensed under the GNU LGPLv3, a free and open-source license. For more information, please see the [license file](./LICENSE).
