@@ -1,6 +1,6 @@
 <div align="center">
 
-![Mod Banner](https://i.imgur.com/WLCTnCK.png)
+![Mod Banner](https://raw.githubusercontent.com/azubangithub/LegacyFemaleGenderMod-1.12.2/refs/heads/main/src/main/resources/assets/wildfire_gender/banner.png)
 # LFGM (Legacy Female Gender Mod)
 
 [![GitHub Issues](https://img.shields.io/github/issues/azubangithub/LegacyFemaleGenderMod-1.12.2)](https://github.com/azubangithub/LegacyFemaleGenderMod-1.12.2/issues)
@@ -17,7 +17,7 @@ This mod is primarily client-sided, but settings are automatically synced with o
 
 - **Repository**: [GitHub](https://github.com/azubangithub/LegacyFemaleGenderMod-1.12.2)
 - **Issue Tracker**: [GitHub Issues](https://github.com/azubangithub/LegacyFemaleGenderMod-1.12.2/issues)
-- **Original Mod**: [Wildfire's Female Gender Mod (CurseForge)](https://www.curseforge.com/minecraft/mc-mods/female-gender-forge)
+- **Original Mod**: [Wildfire's Female Gender Mod](https://modrinth.com/mod/female-gender)
 
 ## Features
 
