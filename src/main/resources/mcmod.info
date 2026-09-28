@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "wildfire_gender",
+    "name": "LFGM (Legacy Female Gender Mod)",
+    "description": "1.12.2 port of Wildfire's Female Gender Mod. Adds female player model customization and breast physics.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "https://github.com/azubangithub/LegacyFemaleGenderMod-1.12.2",
+    "updateUrl": "",
+    "authorList": ["WildfireRomeo", "azuban"],
+    "credits": "Original mod by WildfireRomeo. Ported to 1.12.2 by azuban.",
+    "logoFile": "assets/wildfire_gender/icon.png",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

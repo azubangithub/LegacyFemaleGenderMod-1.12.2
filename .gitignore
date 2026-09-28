@@ -1,0 +1,80 @@
+# Gradle & Build outputs
+.gradle/
+build/
+out/
+bin/
+classes/
+.gradletasknamecache
+gradle-app.setting
+
+# Eclipse
+*.launch
+.settings/
+.classpath
+.project
+
+# IntelliJ IDEA
+.idea/
+!.idea/copyright/
+*.iml
+*.ipr
+*.iws
+
+# Visual Studio Code
+.vscode/
+
+# Other Editors & Temp files
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*~
+*.bak
+
+# Minecraft / Forge runtime
+run/
+runs/
+mods/
+asm/
+crash-reports/
+logs/
+
+# Logs & JVM dumps
+*.log
+hs_err_pid*
+replay_pid*
+*.hprof
+
+# Binaries and Archives
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+!libs/*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Project-specific reference, scratch, and temporary files
+/FemaleGenderMod-neoforge-1.21.1_sync/
+/blockbuster-2.7.1/
+/scratch/
+/net/
+/mcmod.info

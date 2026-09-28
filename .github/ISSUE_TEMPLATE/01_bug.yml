@@ -1,0 +1,62 @@
+name: Bug Report
+description: File a bug report for LFGM (1.12.2).
+labels: ["Bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: "What Forge and LFGM version are you using?"
+      placeholder: "Minecraft 1.12.2, Forge 14.23.5.2860, LFGM 4.3.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "What were you doing, and what did you expect to happen?"
+      placeholder: |
+        I was doing X, and expected Y to happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: "What actually happened?"
+      description: |
+        **Do not directly paste long logs here!** Instead, upload them to [mclo.gs](https://mclo.gs/) or [Gist](https://gist.github.com/) and paste the link here.
+      placeholder: |
+        The game crashed / button didn't work
+    validations:
+      required: true
+
+  - type: textarea
+    id: repo-steps
+    attributes:
+      label: "Steps to reproduce this issue"
+      description: |
+        Please provide the list of steps required to reproduce this issue in as much detail as possible.
+      placeholder: |
+        1. Open wardrobe screen (press G)
+        2. Click ...
+        3. ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mod-compat
+    attributes:
+      label: "Is this a mod compatibility issue?"
+      options:
+        - "Not sure or not applicable"
+        - "Yes, this issue only occurs with other mods present (e.g. Blockbuster, Metamorph, OptiFine)"
+        - "No, this issue occurs with only LFGM present"
+    validations:
+      required: true
+
+  - type: textarea
+    id: other-mods
+    attributes:
+      label: "What other mods do you have installed?"
+      description: |
+        Please list any other mods involved if this issue relates to mod compatibility.

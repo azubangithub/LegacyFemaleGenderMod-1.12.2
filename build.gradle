@@ -1,0 +1,78 @@
+plugins {
+    id 'java'
+    id 'com.gtnewhorizons.retrofuturagradle' version '2.0.4'
+}
+
+version = "${mc_version}-${mod_version}"
+group = project.maven_group
+base {
+    archivesName = project.archives_base_name
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(8))
+    }
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java', 'src/api/java']
+        }
+        resources {
+            srcDirs = ['src/main/resources']
+        }
+    }
+}
+
+minecraft {
+    mcVersion = project.mc_version
+    mcpMappingChannel = project.mcp_mappings_channel
+    mcpMappingVersion = project.mcp_mappings_version
+    username = 'Gh0st_19605' //random girl skin from namemc
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    // 1.12.2 Forge provides Guava, Gson, and standard Minecraft libraries
+    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+processResources {
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.mc_version
+
+    filesMatching('mcmod.info') {
+        expand 'version': project.mod_version, 'mcversion': project.mc_version
+    }
+
+    doLast {
+        copy {
+            from "${buildDir}/resources/main"
+            into "${buildDir}/classes/java/main"
+        }
+    }
+}
+
+classes.dependsOn processResources
+
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    manifest {
+        attributes([
+            "Specification-Title": "wildfire_gender",
+            "Specification-Vendor": "WildfireRomeo, azuban",
+            "Specification-Version": "1",
+            "Implementation-Title": "LFGM",
+            "Implementation-Version": project.version,
+            "Implementation-Vendor" :"WildfireRomeo, azuban"
+        ])
+    }
+}
